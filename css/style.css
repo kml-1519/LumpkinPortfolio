@@ -1,0 +1,466 @@
+body {
+    margin: 0px;
+    transition: all 1s;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 1.5em
+}
+
+@font-face {
+    font-family: 'source-serif-pro', serif;
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://use.typekit.net/cba1top.css);
+}
+
+@font-face {
+    font-family: 'proxima-nova', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://use.typekit.net/cba1top.css);
+}
+
+.mainHeader {
+    position: fixed;
+    top: -60px;
+    transition: all 0.5s;
+    width: 100vw;
+    z-index: 1;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.header-section {
+    background: #F6EEE3;
+    background-image: url('../img/1.jpg');
+    text-align: center;
+    min-height: 500px;
+    height: 100vh;
+}
+
+.header-section img {
+    margin-top: 7em;
+}
+
+.header-section span {
+    color: #00cfbd;
+    font-size: 1em;
+}
+
+.header-section p {
+    font-family: 'source-serif-pro';
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+span.glyphicon.glyphicon-triangle-bottom {
+    font-size: 2em;
+    color: #fff;
+    background-color: rgb(0, 207, 189);
+    padding: 0.5em 2em;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2.5em;
+}
+
+.about {
+    background-size: cover;
+    background: #ffffff;
+    padding-bottom: 5vw;
+    text-align: center;
+}
+
+.about h3 {
+    font-family: 'source-serif-pro';
+    font-size: 3.5em;
+    text-transform: capitalize;
+    color: #3a76d7;
+    padding-bottom: 2%;
+}
+
+.yourPic {
+    padding-left: 0%;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width:200px) and (max-width:320px) {
+
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .yourPic {
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width:400px) {
+
+    /* smartphones, Android phones, landscape iPhone */
+    .yourPic {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (min-width:401px) and (max-width:600px) {
+
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .yourPic {
+        padding-left: 25%;
+    }
+
+}
+
+@media only screen and (min-width:601px) and (max-width:767px) {
+
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .yourPic {
+        padding-left: 30%;
+    }
+}
+
+@media only screen and (max-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media only screen and (max-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+}
+
+@media only screen and (max-width:1281px) {
+    /* hi-res laptops and desktops */
+}
+
+.projects {
+    background-color: #ffffff;
+    padding: 5%;
+    text-align: center;
+
+}
+
+.projects h3 {
+    font-family: 'source-serif-pro';
+    font-size: 3em;
+    text-transform: capitalize;
+    color: #3a76d7;
+    margin-bottom: 2%;
+}
+
+.projects h2 {
+    font-family: 'proxima-nova';
+    font-size: 2.5em;
+    color: #e27b78;
+    padding: 0.25em 0 0 0;
+}
+
+.projects h4 {
+    font-family: 'proxima-nova';
+    font-size: 1em;
+    color: #363433;
+    padding: 0 0 0 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.hero {
+    width: 100%;
+    height: 40%;
+    background: #3498db;
+    display: table;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/*.figure{
+  overflow: hidden;
+  position: relative;
+  display: block;
+  vertical-align: top;
+  border: 3px solid #e27b78;
+  border-width: 0.15em;
+  margin: 1em;
+}
+
+.figcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.figcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  color: #4b551d;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+.figcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 50%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #76804a;
+}
+
+.figure img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+.figure:hover .figcaption{
+ background: rgba(255, 255, 255, 0.85);
+}
+.figure:hover .figcaption div{
+  opacity: 1;
+}
+.figcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+
+.figcaption:hover div:after{
+  width: 0%; /* this controls the strikethrough text
+}
+
+.figure:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}*/
+
+.figure {
+    display: flex;
+    flex-direction: column;
+    margin: 2;
+}
+
+.figure img {
+    max-width: 100%;
+}
+
+.figcaption {
+    align-self: flex-start;
+    text-align: center;
+    top: 5px;
+    font-size: large;
+    color: #f15850;
+}
+
+#about {
+    padding-top: 10vh;
+}
+
+.carousel-content {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#text-carousel {
+    width: 100%;
+    height: auto;
+    padding: 17%;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #ffffff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all 2s;
+}
+
+#myBtn:hover {
+    background-color: #ffffff;
+    /* Add a dark-grey background on hover */
+}
+
+.study-section {
+    padding: 4em 0;
+}
+
+.study-grid h3 {
+    font-family: 'source-serif-pro';
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: #e27b78;
+
+}
+
+.study-grid span {
+    color: #00cfbd;
+    font-size: 0.9em;
+}
+
+.study-grid p {
+    font-size: 1.2em;
+    color: #e27b78;
+    padding: 1.1em 0 0 0;
+}
+
+.study-grid label {
+    font-size: 0.8em;
+    color: #ffffff;
+    margin: 0 0 0 7px;
+}
+
+.progress {
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.progress-bar-success {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.progress-bar-info {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.progress-bar-warning {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.progress-bar-danger {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+.study-grid h4 {
+    font-size: 1.3em;
+    text-transform: capitalize;
+    color: rgb(29, 26, 26);
+}
+
+.study1 {
+    padding: 1em 0 0;
+}
+
+.study2 {
+    padding: 2em 0 0;
+}
+
+.service-section {
+    text-align: center;
+    padding: 4em 0;
+}
+
+.service-grid h4 {
+    font-size: 1.5em;
+    margin: 0.9em 0;
+    font-family: 'source-serif-pro';
+}
+
+.service-grid p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 1.8em;
+}
+
+span.glyphicon.glyphicon-pencil {
+    font-size: 2em;
+    color: #ffffff;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 1em;
+}
+
+span.glyphicon.glyphicon-phone {
+    font-size: 2em;
+    color: #C6D9C7;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 1em;
+}
+
+span.glyphicon.glyphicon-signal {
+    font-size: 2em;
+    color: #C6D9C7;
+    border-radius: 50px;
+    border: 2px solid;
+    padding: 1em;
+}
+
+.mainFooter {
+    background-color: #3a76d7;
+    color: #ffffff;
+}
+
+.footer-top {
+    text-align: center;
+    font-family: 'source-serif-pro';
+    font-size: 1em;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.panel-default>.panel-heading {
+    background-color: #e27b78;
+    color: #ffffff;
+    /*controls the text color of collapse headings on about page */
+}
+
+.navbar-inverse .navbar-nav>li:hover {
+    background-color: #7b9ed8;
+    color: white;
+    border-radius: 4px;
+}
+
+.navbar-inverse {
+    background-color: #3a76d7;
+    border: none;
+}
+
+.navbar-custom {
+    color: #ffffff;
+    background-color: #3a76d7;
+}
