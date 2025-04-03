@@ -275,6 +275,8 @@ h1 {
     top: 5px;
     font-size: large;
     color: #f15850;
+    margin-bottom: 20px;
+    /* This adds space below each title */
 }
 
 #about {
