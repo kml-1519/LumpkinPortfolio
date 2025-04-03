@@ -72,13 +72,19 @@ span.glyphicon.glyphicon-triangle-bottom {
     font-family: 'source-serif-pro';
     font-size: 3.5em;
     text-transform: capitalize;
-    color: #3a76d7;
+    color: #000000;
+    /* Changed from #3a76d7 to black */
     padding-bottom: 2%;
 }
 
+/* Make the profile image 30% smaller */
 .yourPic {
     padding-left: 0%;
     transition: all 0.5s;
+    width: 70%;
+    /* This makes the image 30% smaller */
+    margin: 0 auto;
+    /* Center the image */
 }
 
 @media only screen and (min-width:200px) and (max-width:320px) {
@@ -86,6 +92,7 @@ span.glyphicon.glyphicon-triangle-bottom {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     .yourPic {
         padding-left: 0%;
+        width: 70%;
     }
 }
 
@@ -94,6 +101,7 @@ span.glyphicon.glyphicon-triangle-bottom {
     /* smartphones, Android phones, landscape iPhone */
     .yourPic {
         padding-left: 10%;
+        width: 70%;
     }
 }
 
@@ -102,6 +110,7 @@ span.glyphicon.glyphicon-triangle-bottom {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     .yourPic {
         padding-left: 25%;
+        width: 70%;
     }
 
 }
@@ -111,6 +120,7 @@ span.glyphicon.glyphicon-triangle-bottom {
     /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
     .yourPic {
         padding-left: 30%;
+        width: 70%;
     }
 }
 
@@ -137,14 +147,16 @@ span.glyphicon.glyphicon-triangle-bottom {
     font-family: 'source-serif-pro';
     font-size: 3em;
     text-transform: capitalize;
-    color: #3a76d7;
+    color: #000000;
+    /* Changed to black to match your name header */
     margin-bottom: 2%;
 }
 
 .projects h2 {
     font-family: 'proxima-nova';
     font-size: 2.5em;
-    color: #e27b78;
+    color: #1a3a6e;
+    /* Changed from #e27b78 (pink) to dark navy blue */
     padding: 0.25em 0 0 0;
 }
 
@@ -431,7 +443,8 @@ span.glyphicon.glyphicon-signal {
 }
 
 .mainFooter {
-    background-color: #3a76d7;
+    background-color: #1a3a6e;
+    /* Changed to dark navy blue for consistency */
     color: #ffffff;
 }
 
@@ -443,24 +456,28 @@ span.glyphicon.glyphicon-signal {
     padding-top: 10px;
 }
 
+/* Change dropdown boxes (About Me, Contact, Resume) to dark navy blue */
 .panel-default>.panel-heading {
-    background-color: #e27b78;
+    background-color: #1a3a6e;
+    /* Changed from #e27b78 (pink) to dark navy blue */
     color: #ffffff;
-    /*controls the text color of collapse headings on about page */
 }
 
 .navbar-inverse .navbar-nav>li:hover {
-    background-color: #7b9ed8;
+    background-color: #2d5396;
+    /* Slightly lighter navy for hover state */
     color: white;
     border-radius: 4px;
 }
 
 .navbar-inverse {
-    background-color: #3a76d7;
+    background-color: #1a3a6e;
+    /* Changed to dark navy blue for consistency */
     border: none;
 }
 
 .navbar-custom {
     color: #ffffff;
-    background-color: #3a76d7;
+    background-color: #1a3a6e;
+    /* Changed to dark navy blue for consistency */
 }
