@@ -32,266 +32,278 @@
 </head>
 
 <body>
-
-	<!-- NAVBAR -->
-	<section class="container-fluid mainHeader fadeIn" id="navbar">
-		<div class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Kayla Lumpkin</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="inactive" data-toggle="collapse" data-target=".navbar-collapse.in"><a
-								href="#">About</a></li>
-						<li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse.in">Projects</a>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+	<div class="page-container">
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<div class="sidebar-header">
+				<h1 class="sidebar-name">Kayla Lumpkin</h1>
 			</div>
+			<ul class="sidebar-menu">
+				<li><a href="#about" class="menu-link active">About</a></li>
+				<li><a href="#projects" class="menu-link">Projects</a></li>
+				<li><a href="#contact" class="menu-link">Contact</a></li>
+				<li><a href="#photography" class="menu-link">Photography</a></li>
+				<li><a href="pdfs/lumpkin_resume.pdf" target="_blank">Resume</a></li>
+			</ul>
 		</div>
-	</section>
 
-	<!-- ABOUT ME -->
-
-	<section class="container-fluid about fadeIn" id="about">
-		<h3>Kayla Lumpkin</h3>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 col-md-6">
-					<img class="yourPic img-responsive" src="img/kayla_picture.jpg" alt="Kayla Lumpkin">
-				</div>
-				<div class="col-sm-9 col-md-6">
-					<p>
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-										About Me</a>
-								</h4>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">I'm an experienced housing policy practitioner, data
-									visualization specialist, and advocate for equity.
-									<br><br>Throughout my career, I've worked for federal agencies, local
-									governments, non-profits, and government relations teams to advance policy goals and
-									housing market equity with evidence-based approaches. My expertise spans from
-									project management, technical writing, data visualization, to comprehensive analysis
-									using
-									tools like Power BI, ArcGIS, QGIS, and R Studio. I'm passionate about crafting
-									solutions that bridge research and practice, helping organizations translate data
-									into meaningful policy actions and
-									empower historically marginalized communities.
-									<br><br>Let's connect to discuss how I can support your organization.
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-										Contact</a>
-								</h4>
-							</div>
-							<div id="collapse2" class="panel-collapse collapse">
-								<div class="panel-body"><a href="https://www.linkedin.com/in/kaylamlumpkin"
-										target="_blank">Linkedin</a><br>
-									<a href="mailto: k.m.lumpkin@outlook.com">Email</a><br>
-								</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-										Resume</a>
-								</h4>
-							</div>
-							<div id="collapse3" class="panel-collapse collapse">
-								<div class="panel-body"><a href="pdfs/lumpkin_resume.pdf"
-										target="_blank">Resume</a><br><br>
-									<!--Writing Samples: <br>
-						<a href="pdfs/MUSA508_HW5_KristinChang.pdf">DRAFT Policy Memo: Recidivism Algorithm for Statewide Prison to Employment Initiative</a><br>
-						<a href="pdfs/CCTermPaper1.pdf">CASE STUDY: Vineyard Wind 1, the First U.S. Large-Scale Offshore Wind Project</a>-->
-								</div>
-							</div>
+		<!-- Content Area -->
+		<div class="content-area">
+			<!-- About Section -->
+			<div id="about-section" class="page-section active">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<img class="yourPic img-responsive" src="img/kayla_picture.jpg" alt="Kayla Lumpkin">
+							<h3>About</h3>
+							<p>I'm an experienced housing policy practitioner, data visualization specialist, and
+								advocate for equity.</p>
+							<p>Throughout my career, I've worked for federal agencies, local governments, non-profits,
+								and government relations teams to advance policy goals and housing market equity with
+								evidence-based approaches. My expertise spans from project management, technical
+								writing, data visualization, to comprehensive analysis using tools like Power BI,
+								ArcGIS, QGIS, and R Studio. I'm passionate about crafting solutions that bridge research
+								and practice, helping organizations translate data into meaningful policy actions and
+								empower historically marginalized communities.</p>
+							<p>Let's connect to discuss how I can support your organization.</p>
 						</div>
 					</div>
-					</p>
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<section class="container-fluid projects fadeIn" id="projects">
-		<!-- <div class="hero">
-		  	</div> -->
-		<h3>Work Product</h3><br>
+			<!-- Projects Section -->
+			<div id="projects-section" class="page-section">
+				<h3>Projects</h3>
 
-		<!-- Data Viz and Tools Section (Now First) -->
-		<h2>Data Viz and Tools</h2><br>
-		<div class="container ">
-			<div class="row ">
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption ">
-							<div><a href="https://data.huduser.gov/dashboard/" target="_blank">Socio-Demographic Data
-									Dashboards</a></div>
-						</div>
-						<img class="img-responsive " src="img/SDDD.JPG" alt="Thumb " width="400 " height="300 " />
-						<div class="description">
-							<h4>The beta version of the Socio-Demographic Data Dashboards provides interactive
-								visualizations of local demographic, environmental, and housing conditions for select
-								Department of Housing and Urban Development (HUD) Fiscal Year 2023 jurisdictions. These
-								comprehensive dashboards integrate interactive maps, analytical text, data tables, and
-								dynamic charts using multiple authoritative data sources, including the 2017-2021 5-Year
-								American Community Survey, Department of Transportation metrics, Environmental
-								Protection Agency indicators, and HUD administrative datasets. These dashboards were
-								designed to enable local governments, Public Housing Agencies, states, and community
-								organizations to conduct evidence-based housing needs assessments, streamline
-								preparation of HUD-mandated reports, and develop targeted housing and community
-								development strategies.</h4>
-						</div><br></br>
-						<a href="https://data.huduser.gov/dashboard/" class="cta-button" target="_blank">Explore
-							the Socio-Demographic Dashboards</a>
-					</div>
-				</div>
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption ">
-							<div><a href="https://arcg.is/b4bLm" target="_blank">Site Suitability: Siting Climate
-									Resilient Housing in the U.S. Virgin Islands</a></div>
-						</div>
-						<img class="img-responsive " src="img/site.JPG" alt="Thumb " width="400 " height="300 " />
-						<div class="description">
-							<h4>I conducted a comprehensive site suitability analysis using ArcGIS Pro to identify
-								optimal locations for climate-resilient affordable housing on St. Thomas in the U.S.
-								Virgin Islands. This multi-criteria evaluation incorporated eight critical factors:
-								appropriate slope gradients (prioritizing areas with 0-10% slope), zoning compliance
-								(focusing on R-3, R-4, R-5, and B-4 zones), proximity to public transportation (within
-								305 feet of bus stops), access to commercial centers (within ¼ mile), and safety from
-								four distinct climate hazards (gut flooding, sea level rise, tsunami inundation, and
-								storm surge).
-								<br><br>Using weighted overlay techniques and the ArcGIS Pro Suitability Modeler, I
-								transformed
-								complex environmental and social data into actionable development recommendations. The
-								analysis revealed the Anna's Retreat estate as the most suitable area for multi-family
-								housing development—balancing climate resilience with accessibility to essential
-								services. I completed this analysis for the University of Pennsylvania's City Planning
-								Studio on St. Thomas's Resilience Plan.
-							</h4>
-						</div><br></br>
-						<a href="https://arcg.is/b4bLm" class="cta-button" target="_blank">View Site Analysis</a>
-					</div>
-				</div>
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption
-                            target=" _blank">Technical Assistance Funding Dashboard</a></div>
-					</div>
-					<img class="img-responsive " src="img/ta.JPG" alt="Thumb " width="400 " height="300 " />
-					<div class="description">
-						<h4>I designed a custom dashboard for senior leadership in the Office of Fair Housing and Equal
-							Opportunity (FHEO) to strategically monitor technical assistance (TA) funding allocations.
-							Leveraging Power Automate for automated data integration and Power BI for analytics, the
-							dashboard transformed financial data into intuitive visual metrics that highlighted
-							opportunities for optimization. This interactive dashboard enabled leadership to make
-							evidence-based decisions about resource allocation, prioritize technical assistance
-							interventions, and maximize the impact of limited funding. The dashboard's real-time
-							monitoring capabilities significantly enhanced FHEO's ability to respond dynamically to
-							changing priorities while maintaining compliance with federal requirements.</h4>
-					</div><br></br>
-				</div>
-			</div>
-		</div><br><br><br>
-
-		<!-- Writing Samples Section (Now Second) -->
-		<h2>Writing Samples</h2><br>
-		<div class="container ">
-			<div class="row ">
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption ">
-							<div><a href="pdfs/affh_ej.pdf" target="_blank">Affirmatively Furthering Fair Housing and
-									Environmental Justice</a></div>
-						</div>
-						<img class="img-responsive " src="img/affh_ej.JPG" alt="Thumb " width="400 " height="300 " />
-						<div class="description">
-							<h4>I co-authored a white paper for the Department of Housing and Urban
-								Development's Office of Fair Housing and Equal Opportunity Policy and Legislative
-								Initiatives Division that established the critical intersection between environmental
-								justice and fair housing policy. My analysis provided senior leadership with
-								evidence-based recommendations for integrating environmental justice principles into the
-								Affirmatively Furthering Fair Housing (AFFH) Rule, a key regulatory framework requiring
-								jurisdictions to address discriminatory housing patterns. The white paper specifically
-								demonstrated how environmental hazard exposure disproportionately affects protected
-								classes, and how AFFH implementation could be strengthened through systematic assessment
-								of these disparities. This work directly informed the Department's approach to
-								compliance reviews and technical assistance priorities, helping jurisdictions develop
-								more effective fair housing strategies.</h4>
-						</div><br></br>
-						<a href="pdfs/affh_ej.pdf" class="cta-button" target="_blank">Read White Paper</a>
-					</div>
-				</div>
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption ">
-							<div><a href="pdfs/generational-wealth-heirs-property-policy-factsheet.pdf"
-									target="_blank">Preserving Generational Wealth for Heirs Property Homeowners</a>
+				<!-- Data Viz Section -->
+				<h2>Data Viz and Tools</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a href="https://data.huduser.gov/dashboard/" target="_blank">Socio-Demographic
+											Data Dashboards</a></div>
+								</div>
+								<img class="img-responsive" src="img/SDDD.JPG" alt="Thumb" width="400" height="300" />
+								<div class="description">
+									<h4>The beta version of the Socio-Demographic Data Dashboards provides interactive
+										visualizations of local demographic, environmental, and housing conditions for
+										select Department of Housing and Urban Development (HUD) Fiscal Year 2023
+										jurisdictions. These comprehensive dashboards integrate interactive maps,
+										analytical text, data tables, and dynamic charts using multiple authoritative
+										data sources, including the 2017-2021 5-Year American Community Survey,
+										Department of Transportation metrics, Environmental Protection Agency
+										indicators, and HUD administrative datasets. These dashboards were designed to
+										enable local governments, Public Housing Agencies, states, and community
+										organizations to conduct evidence-based housing needs assessments, streamline
+										preparation of HUD-mandated reports, and develop targeted housing and community
+										development strategies.</h4>
+								</div>
+								<a href="https://data.huduser.gov/dashboard/" class="cta-button" target="_blank">Explore
+									the Socio-Demographic Dashboards</a>
 							</div>
 						</div>
-						<img class="img-responsive " src="img/heirs.JPG" alt="Thumb " width="400 " height="300 " />
-						<div class="description">
-							<h4>I authored a comprehensive policy brief on heirs property - a fractional ownership
-								crisis affecting an estimated 440,000 properties valued at $41 billion nationwide. This
-								research identified how the absence of estate planning creates an unstable form of
-								ownership that disproportionately undermines wealth-building for Black, Latino,
-								Hispanic, and low-income households. While at the PolicyCenter, I developed a
-								multi-pronged policy framework addressing both prevention and resolution strategies,
-								including expanding affordable legal services, creating alternative pathways to verify
-								ownership, and strengthening federal programs like the Heirs Property Relending Program.
-								The brief has served as an actionable roadmap for policymakers, financial institutions,
-								and housing advocates working to preserve generational wealth and housing stability for
-								vulnerable communities facing this complex legal challenge.
-							</h4>
-						</div><br></br>
-						<a href="pdfs/generational-wealth-heirs-property-policy-factsheet.pdf" class="cta-button"
-							target="_blank">View Policy Brief</a>
+
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a href="https://arcg.is/b4bLm" target="_blank">Site Suitability: Siting
+											Climate Resilient Housing in the U.S. Virgin Islands</a></div>
+								</div>
+								<img class="img-responsive" src="img/site.JPG" alt="Thumb" width="400" height="300" />
+								<div class="description">
+									<h4>I conducted a comprehensive site suitability analysis using ArcGIS Pro to
+										identify optimal locations for climate-resilient affordable housing on St.
+										Thomas in the U.S. Virgin Islands. This multi-criteria evaluation incorporated
+										eight critical factors: appropriate slope gradients (prioritizing areas with
+										0-10% slope), zoning compliance (focusing on R-3, R-4, R-5, and B-4 zones),
+										proximity to public transportation (within 305 feet of bus stops), access to
+										commercial centers (within ¼ mile), and safety from four distinct climate
+										hazards (gut flooding, sea level rise, tsunami inundation, and storm surge).
+										<br><br>Using weighted overlay techniques and the ArcGIS Pro Suitability
+										Modeler, I transformed complex environmental and social data into actionable
+										development recommendations. The analysis revealed the Anna's Retreat estate as
+										the most suitable area for multi-family housing development—balancing climate
+										resilience with accessibility to essential services. I completed this analysis
+										for the University of Pennsylvania's City Planning Studio on St. Thomas's
+										Resilience Plan.
+									</h4>
+								</div>
+								<a href="https://arcg.is/b4bLm" class="cta-button" target="_blank">View Site
+									Analysis</a>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a>Technical Assistance Funding Dashboard</a></div>
+								</div>
+								<img class="img-responsive" src="img/ta.JPG" alt="Thumb" width="400" height="300" />
+								<div class="description">
+									<h4>I designed and implemented a custom data visualization solution for senior
+										leadership in the Office of Fair Housing and Equal Opportunity (FHEO) to
+										strategically monitor technical assistance (TA) funding allocations. Leveraging
+										Power Automate for automated data integration and Power BI for advanced
+										analytics, the dashboard transformed complex financial data into intuitive
+										visual metrics that revealed critical trends, identified process bottlenecks,
+										and highlighted opportunities for optimization. This interactive tool enabled
+										executives to make evidence-based decisions about resource allocation,
+										prioritize technical assistance interventions, and maximize the impact of
+										limited funding.</h4>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 ">
-					<div class="figure ">
-						<div class="figcaption ">
-							<div><a href="pdfs/land_use.pdf" target="_blank">Land Use Regulation in the City of
-									Philadelphia</a></div>
+
+				<!-- Writing Samples Section -->
+				<h2>Writing Samples</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a href="pdfs/affh_ej.pdf" target="_blank">Affirmatively Furthering Fair
+											Housing and Environmental Justice</a></div>
+								</div>
+								<img class="img-responsive" src="img/affh_ej.JPG" alt="Thumb" width="400"
+									height="300" />
+								<div class="description">
+									<h4>I co-authored a white paper for the Department of Housing and Urban
+										Development's Office of Fair Housing and Equal Opportunity Policy and
+										Legislative Initiatives Division that established the critical intersection
+										between environmental justice and fair housing policy. My analysis provided
+										senior leadership with evidence-based recommendations for integrating
+										environmental justice principles into the Affirmatively Furthering Fair Housing
+										(AFFH) Rule, a key regulatory framework requiring jurisdictions to address
+										discriminatory housing patterns. The white paper specifically demonstrated how
+										environmental hazard exposure disproportionately affects protected classes, and
+										how AFFH implementation could be strengthened through systematic assessment of
+										these disparities. This work directly informed the Department's approach to
+										compliance reviews and technical assistance priorities, helping jurisdictions
+										develop more effective fair housing strategies.</h4>
+								</div>
+								<a href="pdfs/affh_ej.pdf" class="cta-button" target="_blank">Read White Paper</a>
+							</div>
 						</div>
-						<img class="img-responsive " src="img/land.JPG" alt="Thumb " width="400 " height="300 " />
-						<div class="description">
-							<h4>This paper, written for a University of Pennsylvania Land Use Law course, analyzes
-								Philadelphia's zoning appeal process through two contrasting Zoning Board of Adjustment
-								(ZBA) case studies. I examine
-								how the city's ZBA navigates community input when considering
-								variances, revealing tensions between theory and practice in urban land regulation. My
-								analysis shows that appointed ZBA members often favor development interests over
-								community and planning commission recommendations, with limited transparency in their
-								decision-making. The paper demonstrates how procedural limitations in Philadelphia's
-								land use system can perpetuate inequalities, particularly in historically marginalized
-								neighborhoods like Tioga and Point Breeze, raising important questions about the
-								democratic principles underlying municipal zoning practices.</h4>
-						</div><br></br>
-						<a href="pdfs/land_use.pdf" class="cta-button" target="_blank">Read Research Paper</a>
+
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a href="pdfs/generational-wealth-heirs-property-policy-factsheet.pdf"
+											target="_blank">Preserving Generational Wealth for Heirs Property
+											Homeowners</a></div>
+								</div>
+								<img class="img-responsive" src="img/heirs.JPG" alt="Thumb" width="400" height="300" />
+								<div class="description">
+									<h4>I authored a comprehensive policy brief on heirs property - a fractional
+										ownership crisis affecting an estimated 440,000 properties valued at $41 billion
+										nationwide. This research identified how the absence of estate planning creates
+										an unstable form of ownership that disproportionately undermines wealth-building
+										for Black, Latino, Hispanic, and low-income households. While at the
+										PolicyCenter, I developed a multi-pronged policy framework addressing both
+										prevention and resolution strategies, including expanding affordable legal
+										services, creating alternative pathways to verify ownership, and strengthening
+										federal programs like the Heirs Property Relending Program. The brief has served
+										as an actionable roadmap for policymakers, financial institutions, and housing
+										advocates working to preserve generational wealth and housing stability for
+										vulnerable communities facing this complex legal challenge.</h4>
+								</div>
+								<a href="pdfs/generational-wealth-heirs-property-policy-factsheet.pdf"
+									class="cta-button" target="_blank">View Policy Brief</a>
+							</div>
+						</div>
+
+						<div class="col-sm-4">
+							<div class="figure">
+								<div class="figcaption">
+									<div><a href="pdfs/land_use.pdf" target="_blank">Land Use Regulation in the City of
+											Philadelphia</a></div>
+								</div>
+								<img class="img-responsive" src="img/land.JPG" alt="Thumb" width="400" height="300" />
+								<div class="description">
+									<h4>This paper, written for a University of Pennsylvania Land Use Law course,
+										analyzes Philadelphia's zoning appeal process through two contrasting Zoning
+										Board of Adjustment (ZBA) case studies. I examine how the city's ZBA navigates
+										community input when considering variances, revealing tensions between theory
+										and practice in urban land regulation. My analysis shows that appointed ZBA
+										members often favor development interests over community and planning commission
+										recommendations, with limited transparency in their decision-making. The paper
+										demonstrates how procedural limitations in Philadelphia's land use system can
+										perpetuate inequalities, particularly in historically marginalized neighborhoods
+										like Tioga and Point Breeze, raising important questions about the democratic
+										principles underlying municipal zoning practices.</h4>
+								</div>
+								<a href="pdfs/land_use.pdf" class="cta-button" target="_blank">Read Research Paper</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Photography Section -->
+			<div id="photography-section" class="page-section">
+				<h3>Photography</h3>
+				<div class="photo-grid">
+					<div class="photo-item">
+						<img src="img/coney.JPG" alt="Coney Island" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/det.JPG" alt="Detroit Peoplemover" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/ny.JPG" alt="Meatpacking Flowershow" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/protest.JPG" alt="DET Protest" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/usvi_film.jpg" alt="USVI" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/bird.jpg" alt="Paris" class="img-responsive">
+					</div>
+					<div class="photo-item">
+						<img src="img/paris.jpg" alt="CDG" class="img-responsive">
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact Section -->
+			<div id="contact-section" class="page-section">
+				<h3>Contact</h3>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p><a href="https://www.linkedin.com/in/kaylamlumpkin" target="_blank">LinkedIn</a></p>
+							<p><a href="mailto:k.m.lumpkin@outlook.com">Email: k.m.lumpkin@outlook.com</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
+	<!-- JavaScript for navigation -->
+	<script>
+		$(document).ready(function () {
+			// Handle menu clicks
+			$('.menu-link').on('click', function (e) {
+				e.preventDefault();
+
+				// Update active menu item
+				$('.menu-link').removeClass('active');
+				$(this).addClass('active');
+
+				// Show corresponding section
+				var targetSection = $(this).attr('href').replace('#', '') + '-section';
+				$('.page-section').removeClass('active');
+				$('#' + targetSection).addClass('active');
+			});
+		});
+	</script>
 </body>
 
 </html>

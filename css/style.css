@@ -538,3 +538,150 @@ span.glyphicon.glyphicon-signal {
     background-color: #1a3a6e;
     /* Changed to dark navy blue for consistency */
 }
+
+/* New sidebar layout styles - Added [4/24/25] */
+/* ========================================= */
+
+/* Create a sidebar layout with fixed navigation */
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Create a sidebar layout with fixed navigation */
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 30px 0;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-header {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-name {
+    font-family: 'source-serif-pro', serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+}
+
+.sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    color: #1a3a6e;
+    font-weight: 600;
+}
+
+.content-area {
+    flex: 1;
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.page-section {
+    display: none;
+    /* Hide all sections by default */
+    padding: 20px 0;
+}
+
+.page-section.active {
+    display: block;
+    /* Show only active section */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px 0;
+    }
+
+    .content-area {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+
+/* Photography grid styles */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 15px;
+    margin: 20px 0;
+}
+
+.photo-item {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-item:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* Creates a square aspect ratio */
+}
+
+.photo-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This ensures the image fills the square while maintaining aspect ratio */
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for photo grid */
+@media only screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
