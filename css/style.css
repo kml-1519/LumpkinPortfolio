@@ -73,8 +73,9 @@ span.glyphicon.glyphicon-triangle-bottom {
     font-size: 3.5em;
     text-transform: capitalize;
     color: #000000;
-    /* Changed from #3a76d7 to black */
-    padding-bottom: 2%;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.02em;
+    margin-top: 0.5em;
 }
 
 /* Make the profile image 30% smaller */
@@ -145,28 +146,69 @@ span.glyphicon.glyphicon-triangle-bottom {
 
 .projects h3 {
     font-family: 'source-serif-pro';
-    font-size: 3em;
+    font-size: 2.8em;
     text-transform: capitalize;
     color: #000000;
-    /* Changed to black to match your name header */
-    margin-bottom: 2%;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.01em;
 }
+
 
 .projects h2 {
     font-family: 'proxima-nova';
-    font-size: 2.5em;
+    font-size: 2.2em;
     color: #1a3a6e;
-    /* Changed from #e27b78 (pink) to dark navy blue */
-    padding: 0.25em 0 0 0;
+    padding: 0.25em 0 0.5em 0;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.projects h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #1a3a6e;
 }
 
 .projects h4 {
     font-family: 'proxima-nova';
     font-size: 1em;
-    color: #363433;
-    padding: 0 0 0 0;
+    line-height: 1.6;
+    color: #444444;
     text-align: justify;
     text-justify: inter-word;
+    margin-top: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1a3a6e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-family: 'proxima-nova', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2d5396;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cta-button:focus {
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .hero {
@@ -262,11 +304,24 @@ h1 {
 .figure {
     display: flex;
     flex-direction: column;
-    margin: 2;
+    margin: 0 0 40px 0;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.col-sm-4 {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.col-sm-4>.figure {
+    flex: 1;
 }
 
 .figure img {
     max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .figcaption {
