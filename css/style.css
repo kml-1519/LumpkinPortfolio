@@ -167,7 +167,7 @@ span.glyphicon.glyphicon-triangle-bottom {
 .description h4 {
     font-family: 'proxima-nova', sans-serif;
     /* Same font as about page */
-    font-size: 1.785em;
+    font-size: 0.9em;
     /* 2.1em (increased body size) × 0.85 (15% smaller) = 1.785em */
     line-height: 1.6;
     color: #444444;
